@@ -9,8 +9,8 @@ public class MYTest {
    public  void printNthFibonacciSequence() throws Exception {
 
         Fibonacci fib = new Fibonacci();
-        int nthFibNumber = fib.printSeries(5);
-        Assert.assertTrue(nthFibNumber == 16);
+        int nthFibNumber = fib.printNthNumberInFibonacci(5);
+        Assert.assertTrue(nthFibNumber == 3);
 
     }
 
@@ -19,7 +19,7 @@ public class MYTest {
     public  void printNthFibonacciSequence_invalid() throws Exception {
 
         Fibonacci fib = new Fibonacci();
-        Exception exception = Assert.assertThrows(Exception.class , () -> { fib.printSeries(-5);});
+        Exception exception = Assert.assertThrows(Exception.class , () -> { fib.printNthNumberInFibonacci(-5);});
         Assert.assertTrue(exception.getMessage().contentEquals("the Number should be bigger than 0"));
 
     }

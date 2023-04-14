@@ -2,7 +2,7 @@ package com.learning.brightly;
 
 public class Fibonacci {
 
-    public int printSeries(Integer n) throws Exception {
+    public int printNthNumberInFibonacci(Integer n) throws Exception {
 
         int a = 0;
         int b = 1;
